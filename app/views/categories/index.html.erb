@@ -1,27 +1,25 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Categories</h1>
-
-<table class="table">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @categories.each do |category| %>
-      <tr>
-        <td><%= category.name %></td>
-        <td><%= link_to 'Show', category %></td>
-        <td><%= link_to 'Edit', edit_category_path(category) %></td>
-        <td><%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Category', new_category_path %>
+<!-- will need to link the images to the category partial -->
+<div class="grid-container">
+  <div class="title">
+    <h1><span class="typed"></span></h1>
+  </div>
+  <div class="aps">
+    <%=image_tag("apps.png", size: "200x200")%>
+  </div>
+  <div class="diner">
+    <%=image_tag("dinner.png", size: "200x200")%>
+  </div>
+  <div class="breakfast">
+    <%=image_tag("breakfast.png", size: "200x200")%>
+  </div>
+  <div class="desert">
+    <%=image_tag("dessert.png", size: "200x200")%>
+  </div>
+  <div class="drinks">
+    <%=image_tag("drinks.png", size: "200x200")%>
+  </div>
+  <div class="mainlogo">
+    <strong>MAIN LOGO COMING SOON</strong>
+  </div>
+</div>
