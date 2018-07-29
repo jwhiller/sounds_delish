@@ -6,6 +6,7 @@
   <thead>
     <tr>
       <th>Name</th>
+      <th>Category</th>
       <th>Description</th>
       <th>Ingredients</th>
       <th>Directions</th>
@@ -18,6 +19,7 @@
     <% @recipes.each do |recipe| %>
       <tr>
         <td><%= recipe.name %></td>
+        <td><%= recipe.category_id %></td>
         <td><%= recipe.description %></td>
         <td><%= recipe.ingredients %></td>
         <td><%= recipe.directions %></td>
