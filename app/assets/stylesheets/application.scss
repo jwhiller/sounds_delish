@@ -32,7 +32,8 @@ nav {
   #nav-logo {
     grid-area: logo;
     align-self: center;
-    padding: 20%;
+    padding-left: 15px;
+    filter: invert(1);
   }
 
   #nav-tag {
@@ -72,10 +73,20 @@ nav {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 100px;
   justify-items: center;
-  grid-template-areas: ". . title title title title title title title title . ." ". . title title title title title title title title . ." ". aps aps diner diner breakfast breakfast desert desert drinks drinks ." ". aps aps diner diner breakfast breakfast desert desert drinks drinks ." ". . mainlogo mainlogo mainlogo mainlogo mainlogo mainlogo mainlogo mainlogo . ." ". . mainlogo mainlogo mainlogo mainlogo mainlogo mainlogo mainlogo mainlogo . ." ". . mainlogo mainlogo mainlogo mainlogo mainlogo mainlogo mainlogo mainlogo . .";
+  grid-template-areas:
+  "title title title title title title title title . . . ."
+  "title title title title title title title title . . . ."
+  ". aps aps diner diner breakfast breakfast desert desert drinks drinks ."
+  ". aps aps diner diner breakfast breakfast desert desert drinks drinks ."
+  ". . . . mainlogo mainlogo mainlogo mainlogo mainlogo mainlogo mainlogo mainlogo"
+  ". . . . mainlogo mainlogo mainlogo mainlogo mainlogo mainlogo mainlogo mainlogo";
 }
 
-.title { grid-area: title; }
+.title { grid-area: title;
+opacity: 0.8;
+filter: invert(1);
+padding-bottom: 10px;
+}
 
 .aps { grid-area: aps; }
 
@@ -87,6 +98,8 @@ nav {
 
 .drinks { grid-area: drinks; }
 
-.mainlogo { grid-area: mainlogo; }
+.mainlogo { grid-area: mainlogo;
+opacity: 0.8;
+ }
 
 .spotifyicon { grid-area: spotifyicon; }
