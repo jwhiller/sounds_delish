@@ -7,7 +7,7 @@
 
 <p>
   <strong>Category:</strong>
-  <%= @recipe.category_id %>
+  <%= @recipe.category_name %>
 </p>
 
 <p>
@@ -28,6 +28,10 @@
 <p>
   <strong>Image:</strong>
   <%= @recipe.image %>
+</p>
+
+<p>
+  <%= image_tag @recipe.image, size: 200 %>
 </p>
 
 <%= link_to 'Edit', edit_recipe_path(@recipe) %> |
