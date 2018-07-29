@@ -1,15 +1,92 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+body {
+  background: url(bgimage2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.container{
+width: 100%;
+margin: 0;
+
+}
+
+
+nav {
+  background-color: rgba(51, 51, 51, 0.6);
+  height: 48px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.18), 0 2px 3px rgba(0,0,0,0.26);
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: sticky;
+  top: 0;
+  display: grid;
+  grid-template-columns: 48px 80px auto 80px 80px;
+  grid-template-areas: "logo home . projects tag";
+
+  #nav-logo {
+    grid-area: logo;
+    align-self: center;
+    padding: 20%;
+  }
+
+  #nav-tag {
+    grid-area: tag;
+    padding-left: 40%;
+  }
+
+  img {
+    width: 48px;
+  }
+
+  a, a:visited {
+    color: #ECEFF4;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background-color: #37474f;
+  }
+
+  .nav-dropdown {
+    display: grid;
+    margin-top: -5px;
+    padding-right: 50px;
+    span {
+      margin: auto;
+    }
+  }
+}
+
+
+
+.grid-container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 100px;
+  justify-items: center;
+  grid-template-areas: ". . title title title title title title title title . ." ". . title title title title title title title title . ." ". aps aps diner diner breakfast breakfast desert desert drinks drinks ." ". aps aps diner diner breakfast breakfast desert desert drinks drinks ." ". . mainlogo mainlogo mainlogo mainlogo mainlogo mainlogo mainlogo mainlogo . ." ". . mainlogo mainlogo mainlogo mainlogo mainlogo mainlogo mainlogo mainlogo . ." ". . mainlogo mainlogo mainlogo mainlogo mainlogo mainlogo mainlogo mainlogo . .";
+}
+
+.title { grid-area: title; }
+
+.aps { grid-area: aps; }
+
+.diner { grid-area: diner; }
+
+.breakfast { grid-area: breakfast; }
+
+.desert { grid-area: desert; }
+
+.drinks { grid-area: drinks; }
+
+.mainlogo { grid-area: mainlogo; }
+
+.spotifyicon { grid-area: spotifyicon; }
