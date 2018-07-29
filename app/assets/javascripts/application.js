@@ -11,19 +11,20 @@
 // about supported directives.
 //
 
-//= require rails-ujs
 //= require jquery
+//= require jquery_ujs
+//= require rails-ujs
 //= require activestorage
 //= require turbolinks
 //= require_tree .
 
 
-var typed = $(".typed");
-
-$(function() {
-  typed.typed({
-    strings: ["You pick the food...", "We pick the food!"],
-    typeSpeed: 100,
-    loop: true,
-  });
-});
+// var typed = $(".typed");
+//
+// $(function() {
+//   typed.typed({
+//     strings: ["You pick the food...", "We pick the food!"],
+//     typeSpeed: 100,
+//     loop: true,
+//   });
+// });
