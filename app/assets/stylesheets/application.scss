@@ -173,3 +173,17 @@ opacity: 0.8;
 .modal {
   background-color: rgba(#cccccc, 0.63);
 }
+
+.modal-image{
+  float: left;
+  padding: 10px;
+}
+.modal-text {
+  float: right;
+}
+
+strong{
+  color:black;
+  font-size: 1.5em;
+  font-style: italic;
+}
