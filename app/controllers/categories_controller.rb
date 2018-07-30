@@ -51,6 +51,18 @@ class CategoriesController < ApplicationController
     end
   end
 
+  def recipes_by_category
+    @category = Category.find(params[:cat_id])
+    @recipes = Recipe.all
+    @recipes_by_cat = []
+
+    @recipes.each do |recipe|
+      if recipe.category.id == @category.id
+        @recipes_by_cat.push(recipe)
+      end
+    end
+  end
+
   # DELETE /categories/1
   # DELETE /categories/1.json
   def destroy
