@@ -1,6 +1,6 @@
 <h1><%= @category.name %></h1>
 <div class="row">
-  <% @recipes_by_cat.each do |recipe| %>
+  <% @recipes.each do |recipe| %>
 
     <div class="col-sm-6 col-md-4">
       <div class="well text-center">
@@ -14,7 +14,9 @@
         </p>
       </div>
     </div>
+
     <!-- Modal -->
+
     <div class="modal fade" id="myModal_<%= recipe.id %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -29,16 +31,15 @@
                 <p><%= image_tag recipe.image, size: 150 %></p>
               <% end %>
             </div>
-              <p>
-                <strong>Description:</strong>
-                <%= recipe.description%></p>
-              <p>
-                <strong>Ingredients:</strong>
-                <%= recipe.ingredients %></p>
-              <p>
-                <strong>Directions:</strong>
-                <%= recipe.directions %></p>
-
+            <p>
+              <strong>Description:</strong>
+              <%= recipe.description%></p>
+            <p>
+              <strong>Ingredients:</strong>
+              <%= recipe.ingredients %></p>
+            <p>
+              <strong>Directions:</strong>
+              <%= recipe.directions %></p>
           </div>
 
         </div>
