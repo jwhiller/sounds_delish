@@ -1,6 +1,7 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+
 body {
   background: url(bgimage2.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -9,68 +10,17 @@ body {
   background-size: cover;
 }
 
-
 .container{
-width: 100%;
-margin: 0;
-
-}
-
-
-nav {
-  background-color: rgba(51, 51, 51, 0.6);
-  height: 48px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.18), 0 2px 3px rgba(0,0,0,0.26);
-  overflow-x: auto;
-  overflow-y: hidden;
-  position: sticky;
-  top: 0;
   display: grid;
-  grid-template-columns: 48px 80px auto 80px 80px;
-  grid-template-areas: "logo home . projects tag";
-
-  #nav-logo {
-    grid-area: logo;
-    align-self: center;
-    padding-left: 15px;
-    filter: invert(1);
-  }
-
-  #nav-tag {
-    grid-area: tag;
-    padding-left: 40%;
-  }
-
-  img {
-    width: 48px;
-  }
-
-  a, a:visited {
-    color: #ECEFF4;
-    text-decoration: none;
-  }
-
-  a:hover {
-    background-color: #37474f;
-  }
-
-  .nav-dropdown {
-    display: grid;
-    margin-top: -5px;
-    padding-right: 50px;
-    span {
-      margin: auto;
-    }
-  }
 }
 
-
+// -------------- landing page --------------
 
 .grid-container {
   display: grid;
   height: 100%;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(9, 1fr);
   grid-column-gap: 100px;
   justify-items: center;
   grid-template-areas:
@@ -88,18 +38,74 @@ filter: invert(1);
 padding-bottom: 10px;
 }
 
-.aps { grid-area: aps; }
+.aps { grid-area: aps;
+}
 
-.diner { grid-area: diner; }
+.diner {
+  grid-area: diner;
+}
 
-.breakfast { grid-area: breakfast; }
+.breakfast { grid-area: breakfast;
+ }
 
-.desert { grid-area: desert; }
+.desert { grid-area: desert;
+ }
 
-.drinks { grid-area: drinks; }
+.drinks { grid-area: drinks;
+}
 
 .mainlogo { grid-area: mainlogo;
 opacity: 0.8;
  }
 
-.spotifyicon { grid-area: spotifyicon; }
+
+
+// --------- navbar -----------
+
+
+nav {
+  background-color: rgba(51, 51, 51, 0.6);
+  height: 48px;
+  width: 100%;
+  margin: 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.18), 0 2px 3px rgba(0,0,0,0.26);
+  position: sticky;
+  top: 0;
+
+}
+
+#nav-logo {
+    float: left;
+    padding-left: 15px;
+    filter: invert(1);
+  }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color: white;
+    float: right;
+    padding-right: 5%;
+    padding-top: 15px;
+    font-size: 120%;
+    font-family: cursive;
+}
+
+.dropdown-content {
+  display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    color:white;
+    font-family: cursive;
+    list-style: none;
+    background-color: rgba(78, 78, 78, 0.8);
+  
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
