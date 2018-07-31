@@ -7,10 +7,12 @@
         <% if recipe.image.nil? == false %>
           <p><%= image_tag recipe.image, size: 250 %></p>
         <% end %>
-        <h3><%= link_to recipe.name, recipe %></h3>
+        <div class="recipe-name">
+        <h3><%= recipe.name %></h3>
+        </div>
         <p>
           <a href="#" data-toggle="modal" data-target="#myModal_<%= recipe.id %>">
-            <span class="glyphicon "></span>Sneak Peek</a>
+            <span class="glyphicon "></span>View Recipe</a>
         </p>
       </div>
     </div>
@@ -25,7 +27,8 @@
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span></button>
-              <h3 class="modal-title" id="myModalLabel"><%= recipe.name %> <div style="text-align: center"><iframe src="https://open.spotify.com/embed?uri=spotify:album:1DFixLWuPkv3KT3TnV35m3" width="400" height="75" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div></h3>
+              <h3 class="modal-title" id="myModalLabel"><%= recipe.name %> <div style="text-align: center"> <iframe src="https://open.spotify.com/embed?uri=spotify:track:3IV4swNduIRunHREK80owz" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+              </div></h3>
             </div>
             <div class="modal-body">
               <div class="modal-image">
