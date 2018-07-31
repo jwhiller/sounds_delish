@@ -8,8 +8,10 @@
   <div class="category">
    <span> CATEGORIES </span>
    <div class="category-content">
+    <% counter = 0 %>
     <% @categories.each do |category| %>
-      <li><%= link_to category.name, categorical_path(cat_id: category.id) %></li>
+    <% counter += 1 %>
+      <li><%= link_to category.name, categorical_path(cat_id: category.id = counter) %></li>
     <% end %>
 
    </div>
