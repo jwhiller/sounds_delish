@@ -1,10 +1,13 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "font-awesome-sprockets";
-@import "font-awesome";
 
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
 
-body {
+html, body {
   background: url(bgimage2.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -183,7 +186,7 @@ opacity: 0.8;
 }
 
 strong{
-  color:black;
+  color:rgb(232, 184, 175);
   font-size: 1.5em;
-  font-style: italic;
+  // font-style: italic;
 }
