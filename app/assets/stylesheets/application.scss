@@ -104,7 +104,7 @@ nav {
   display: grid;
   height: 100vh;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(9, 1fr);
+  grid-template-rows: repeat(8, 1fr);
   grid-column-gap: 100px;
   grid-row-gap: 110px;
   justify-items: center;
@@ -113,7 +113,6 @@ nav {
   "title title title title title title title title . . . ."
   ". aps aps diner diner breakfast breakfast desert desert drinks drinks ."
   ". aps aps diner diner breakfast breakfast desert desert drinks drinks ."
-  ". . . . mainlogo mainlogo mainlogo mainlogo mainlogo mainlogo mainlogo mainlogo"
   ". . . . mainlogo mainlogo mainlogo mainlogo mainlogo mainlogo mainlogo mainlogo";
 }
 
@@ -208,9 +207,27 @@ footer{
   padding-top: 30px;
 }
 
-
-
 .recipe-name{
   color:white;
   font-size: 2em;
+}
+
+#typer{
+  margin-right: 130px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  border-bottom: 0px;
+}
+#backtyper{
+  padding-top: 0px;
+  margin-top: 0;
+  margin-left: 150px;
+  border-top: 0px;
+}
+
+.typed{
+  font-family: caluna, serif;
+  font-size: 6em;
+  color: white;
+  margin-bottom: 30px;
 }

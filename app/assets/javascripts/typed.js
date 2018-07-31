@@ -1,15 +1,35 @@
-var typed = $(".typed");
 
-$(function() {
-  typed.typed({
-    strings: ["You pick the food...", "We pick the food!"],
-    typeSpeed: 100,
-    loop: true,
-  });
+var i = 0;
+var j = 0;
+var txt = 'You choose the food...';
+var backtxt = "We choose the song!"
+var speed = 75;
+
+window.addEventListener('load', function(){
+  typeWriter();
+  setTimeout(backwards, 2500);
+
 });
 
-// var typeArea = document.getElementsByClassName('typed');
-//
-// var typeOut = function() {
-//
-// }
+
+
+function typeWriter() {
+  var displayArea = document.getElementById("typer");
+ if (i < txt.length) {
+   displayArea.innerHTML += txt.charAt(i);
+   i++;
+   setTimeout(typeWriter, speed);
+ }
+}
+
+
+
+function backwards() {
+  var backdisplayArea = document.getElementById("backtyper");
+ if (j < backtxt.length) {
+   backdisplayArea.innerHTML += backtxt.charAt(j);
+   j++;
+   setTimeout(backwards, speed);
+ }
+
+}
