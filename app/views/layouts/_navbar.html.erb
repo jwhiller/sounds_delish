@@ -8,11 +8,24 @@
   <div class="category">
    <span> CATEGORIES </span>
    <div class="category-content">
+<<<<<<< HEAD
     <% counter = 0 %>
     <% @categories.each do |category| %>
     <% counter += 1 %>
       <li><%= link_to category.name, categorical_path(cat_id: category.id = counter) %></li>
     <% end %>
+=======
+
+     <% @categories.each do |category| %>
+  <li> <%= link_to category.name, categorical_path(cat_id: category.id) %> </li>
+  <% end %>
+
+
+
+    <!-- <% @categories.each do |category| %>
+      <li><%= link_to category.name, categorical_path(cat_id: category.id) %></li>
+    <% end %> -->
+>>>>>>> d483d04fcbb8bcdbee00c2544bced478e777f15c
 
    </div>
  </div>
