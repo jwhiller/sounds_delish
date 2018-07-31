@@ -17,12 +17,17 @@
 
 <p>
   <strong>Ingredients:</strong>
-  <%= @recipe.ingredients %>
+  <%= @recipe.ingredients.html_safe %>
+</p>
+
+<p>
+  <strong>Song:</strong>
+  <%= @recipe.song.html_safe %>
 </p>
 
 <p>
   <strong>Directions:</strong>
-  <%= @recipe.directions %>
+  <%= @recipe.directions.html_safe %>
 </p>
 
 
