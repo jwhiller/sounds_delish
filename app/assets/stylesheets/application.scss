@@ -169,12 +169,16 @@ opacity: 0.8;
 
 // ------- modal  ------
 
-.playlist-modal{
-  float: right;
-}
+// #myModal_{
+//   font-size: 4em;
+//   padding-top: 50%;
+// }
 
-.recipe-modal{
-  float: left
+#myModalLabel{
+  padding: 5px 5px 0px 5px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
 }
 
 .modal-content{
@@ -204,8 +208,9 @@ footer{
   padding-top: 30px;
 }
 
-#myModalLabel{
-  padding: 5px;
-  display: flex;
-  justify-content: space-between;
+
+
+.recipe-name{
+  color:white;
+  font-size: 2em;
 }
