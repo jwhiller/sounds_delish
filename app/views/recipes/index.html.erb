@@ -12,6 +12,7 @@
       <th>Directions</th>
       <th>Song</th>
       <th>Image</th>
+      <th>Tag</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -24,7 +25,8 @@
         <td><%= recipe.description.html_safe %></td>
         <td><%= recipe.ingredients %></td>
         <td><%= recipe.directions.html_safe %></td>
-        <td><%= recipe.song.html_safe</td>
+        <td><%= recipe.song.html_safe %></td>
+        <td><%= recipe.keyword.html_safe %></td>
         <td><%= recipe.image %></td>
         <td><%= link_to 'Show', recipe %></td>
         <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>

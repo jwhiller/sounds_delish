@@ -42,9 +42,16 @@
   </div>
 
   <div class="field">
-    <%= form.label :image %>
-    <%= form.file_field :image, required: true %>
+    <%= form.label :keyword %>
+    <%= form.text_area :keyword %>
   </div>
+
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.file_field :image %>
+  </div>
+
+
 
   <div class="actions">
     <%= form.submit %>
