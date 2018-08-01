@@ -1,14 +1,15 @@
 
 var i = 0;
 var j = 0;
-var txt = 'You choose the food...';
-var backtxt = "We choose the song!"
+var txt = 'you choose the food...';
+var backtxt = "we choose the song!"
 var speed = 75;
 
-window.addEventListener('load', function(){
+
+
+window.addEventListener("load", function(){
   typeWriter();
   setTimeout(backwards, 2500);
-
 });
 
 
