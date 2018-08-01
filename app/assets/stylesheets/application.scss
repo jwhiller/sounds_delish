@@ -1,5 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
 
 *{
   margin:0;
@@ -8,7 +9,7 @@
 }
 
 html, body {
-  background: url(bgimage2.jpg) no-repeat center center fixed;
+  background: url(bgimage3.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -139,6 +140,7 @@ filter: invert(1);
 
 .mainlogo { grid-area: mainlogo;
 opacity: 0.8;
+filter: invert(1);
  }
 
 
@@ -160,10 +162,10 @@ opacity: 0.8;
    }
 
  h1{
-     padding-left: 30px;
+text-align: center;
      color:white;
      text-shadow: 2px 2px #696969;
-     font-size: 3em;
+     font-size: 6em;
    }
 
 // ------- modal  ------
@@ -226,8 +228,8 @@ footer{
 }
 
 .typed{
-  font-family: caluna, serif;
-  font-size: 6em;
-  color: white;
+  font-family: 'Merriweather', serif;
+  font-size: 4em;
+  color: black;
   margin-bottom: 30px;
 }
