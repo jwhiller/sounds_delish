@@ -30,6 +30,11 @@
   <%= @recipe.directions.html_safe %>
 </p>
 
+<p>
+  <strong>Tags:</strong>
+  <%= @recipe.keyword.html_safe %>
+</p>
+
 
 <p> <%= image_tag @recipe.image, size: 200 %></p>
 
