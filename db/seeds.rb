@@ -7,3 +7,4 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
  categories = Category.create ([{name: "Apps & Snacks"}, {name: "Dinner"}, {name: "Breakfast"}, {name: "Dessert"}, {name: "Drinks"}])
+
